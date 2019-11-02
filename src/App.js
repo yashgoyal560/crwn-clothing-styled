@@ -46,7 +46,7 @@ class App extends React.Component {
       // );
     });
   }
-  
+
   componentWillUnmount() {
     this.unsubscribeFromAuth();
   }
@@ -66,8 +66,8 @@ class App extends React.Component {
               this.props.currentUser ? (
                 <Redirect to="/" />
               ) : (
-                <SignInAndSignUpPage />
-              )
+                  <SignInAndSignUpPage />
+                )
             }
           />
         </Switch>
@@ -77,7 +77,7 @@ class App extends React.Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser,
+  currentUser: selectCurrentUser
 });
 
 const mapDispatchToProps = dispatch => ({
